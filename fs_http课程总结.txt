@@ -1,0 +1,37 @@
+Fs模块：
+———文件
+Var fs = require(‘fs’); //引入fs模块
+fs.readFileSync(file,[option]);  //同步读取文件
+Fs.readFile(file,[option],callback) //异步读取文件
+
+fs.writeFileSync(file,data[option]);  //同步写入文件
+Fs.writeFile(file,data[option],callback) //异步写入文件
+
+Fs.unlinkSync(path).    //同步删除文件
+fs.unlink(path,callback) //异步删除文件
+———目录
+  Fs.mkdirSync(path) //同步创建目录
+  Fs.mkdir(path，callback) //异步创建目录
+  
+  Fs.rmdirSync(path). //同步删除目录
+  Fs.rmdir(path，callback) //异步删除目录
+
+————————模块
+   module.exports  //模块导出
+   Exports        //模块导出
+  
+
+
+http模块：
+ var http = require('http'); //引入http模块
+
+var server =
+http.createServer(function(req,rep){
+  
+   rep.writeHead(status,{Conten-Type: }) //响应头部
+   rep.write()。//响应内容
+   rep.end()//响应结束
+})
+    //req.url.  请求路径
+   // req.method  请求方法
+
